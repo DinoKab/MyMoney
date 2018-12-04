@@ -1,7 +1,7 @@
 $blackColor: #333;
-$whiteColor: #fff;
+$whiteColor: rgba(255, 255, 255, 0.8);
 $greyColor: #e8e8e8;
-$primaryColor: #08aef1;
+$primaryColor: #0098d5;
 $secondaryColor: #d9ab4d;
 $successColor: #87bf0a;
 $errorColor: #e82c0c;
@@ -29,6 +29,16 @@ body {
   color: $blackColor;
   background-color: lighten($greyColor, 6);
   padding-top: $headerHeight + $freeSpace;
+  background: url('../images/bg2.jpg');
+  background-size: auto;
+}
+
+@media screen and (min-width: 1350px) {
+  body {
+    background: url('../images/bg1.jpg');
+    background-size: 100%;
+    padding-top: $headerHeight + $freeSpace + 18px;
+  }
 }
 
 @import 'header';

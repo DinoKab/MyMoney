@@ -7,7 +7,7 @@
   justify-content: space-around;
   height: $headerHeight;
   font-size: 15px;
-  background-color: $primaryColor;
+  background-color: $blackColor;
   opacity: 0.9;
   z-index: 1000;
 
@@ -18,7 +18,7 @@
     padding: 0 $freeSpace 0 $freeSpace;
 
     .logo {
-      background-image: url('../images/logo.png');
+      // background-image: url('../images/logo.png');
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -34,6 +34,10 @@
 
       li {
         a {
+          color: $whiteColor;
+          text-decoration: none;
+        }
+        p {
           color: $whiteColor;
         }
       }
