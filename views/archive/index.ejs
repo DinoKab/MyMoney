@@ -68,8 +68,8 @@
         <% if (current > 2) { %>
         <a class="new" href="/archive/<%= Number(current) - 1 %>">← К новым</a>
         <% } %> <% if (current == 2) { %>
-        <a class="new" href="/">← На главную</a> <% } %> <% if (pages > 0 &&
-        current < pages) { %>
+        <a class="new" href="/users/<%= _user.login %>">← На главную</a> <% } %>
+        <% if (pages > 0 && current < pages) { %>
         <a class="old" href="/archive/<%= Number(current) + 1 %>">К старым →</a>
         <% } %>
       </div>
