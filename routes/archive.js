@@ -41,7 +41,7 @@ async function posts(req, res) {
       });
     });
 
-    console.log(posts);
+    // console.log(posts);
 
     const count = await models.Post.count();
 
@@ -98,7 +98,7 @@ router.get('/posts/:post', async (req, res, next) => {
         //   }
         // });
 
-        console.log(comments);
+        // console.log(comments);
 
         //
         const converter = new showdown.Converter();

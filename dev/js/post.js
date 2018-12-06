@@ -34,7 +34,7 @@ $(function() {
       contentType: 'application/json',
       url: '/post/add'
     }).done(function(data) {
-      console.log(data);
+      // console.log(data);
       if (!data.ok) {
         $('.post-form h2').after('<p class="error">' + data.error + '</p>');
         if (data.fields) {
@@ -69,7 +69,7 @@ $(function() {
       processData: false,
       contentType: false,
       success: function(data) {
-        console.log(data);
+        // console.log(data);
         $('#fileinfo').prepend(
           '<div class="img-container"><img src="/uploads' +
             data.filePath +

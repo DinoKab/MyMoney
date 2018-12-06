@@ -18,7 +18,7 @@ module.exports = async () => {
         url,
         owner
       });
-      console.log(post);
+      // console.log(post);
     });
   } catch (error) {
     console.log(error);

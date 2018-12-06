@@ -59,7 +59,7 @@ $(function() {
       contentType: 'application/json',
       url: '/comment/add'
     }).done(function(data) {
-      console.log(data);
+      // console.log(data);
       if (!data.ok) {
         if (data.error === undefined) {
           data.error = 'Неизвестная ошибка!';
