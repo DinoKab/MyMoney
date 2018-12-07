@@ -3,7 +3,8 @@
   "env": {
     "NODE_ENV": "development",
     "PORT": 3009,
-    "MONGO_URL": "mongodb://localhost/Cash"
+    "MONGO_URL": "mongodb://localhost/Cash",
+    "PER_PAGE": 10
   },
   "ext": ".js,.json",
   "watch": "./"
