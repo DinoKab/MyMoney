@@ -94,6 +94,12 @@ router.post('/add', async (req, res) => {
         error: 'Все поля должны быть заполнены!',
         fields
       });
+    } else if (!/^[0-9.,]+$/.test(title)) {
+      res.json({
+        ok: false,
+        error: 'Только цифры, точка или запятая!',
+        fields: ['title']
+      });
     } else if (title.length < 3 || title.length > 64) {
       res.json({
         ok: false,
