@@ -184,6 +184,7 @@ router.get('/users/:login/:page*?', async (req, res) => {
         login: userLogin
       }
     });
+    console.log(summ);
   } catch (error) {
     throw new Error('Server Error');
   }

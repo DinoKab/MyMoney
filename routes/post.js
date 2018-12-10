@@ -100,12 +100,6 @@ router.post('/add', async (req, res) => {
         error: 'Только цифры, точка или запятая!',
         fields: ['title']
       });
-    } else if (title.length < 3 || title.length > 64) {
-      res.json({
-        ok: false,
-        error: 'Длина заголовка от 3 до 64 символов!',
-        fields: ['title']
-      });
     } else if (body.length < 3) {
       res.json({
         ok: false,
