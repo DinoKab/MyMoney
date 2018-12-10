@@ -3,13 +3,13 @@
   display: flex;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .container {
-    width: 970px;
+    width: 840px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .container {
     width: 750px;
   }
@@ -17,6 +17,6 @@
 
 @media (max-width: 767px) {
   .container {
-    width: 100%;
+    min-width: 97%;
   }
 }

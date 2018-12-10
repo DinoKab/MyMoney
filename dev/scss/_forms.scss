@@ -2,8 +2,17 @@ form {
   display: flex;
   flex-direction: column;
 
+  .edit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   .form-group {
     margin-bottom: $freeSpace;
+    margin-left: 12px;
+    margin-right: 12px;
+    width: 250px;
 
     label {
       font-size: 0.9em;
@@ -46,7 +55,6 @@ button,
   }
 }
 
-
 input,
 textarea {
   background-color: $whiteColor;
@@ -76,13 +84,14 @@ textarea {
 }
 
 input {
-  height: 36px;
+  height: 44px;
+  width: 100%;
   padding-left: 10px;
   padding-right: 10px;
 }
 textarea {
   padding: 8px 10px;
-  min-height: 80px;
+  // min-height: 80px;
 }
 
 input,
