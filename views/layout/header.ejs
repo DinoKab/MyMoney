@@ -16,9 +16,15 @@
   <body>
     <header class="header">
       <div class="container">
-        <a href="/" class="logo"></a>
         <ul class="menu">
-          <li><a href="/users/<%= user.login %>">MyMoney</a></li>
+          <li>
+            <a href="/users/<%= user.login %>" style="color: white">ⲘyⲘoney</a>
+          </li>
+        </ul>
+        <ul class="menu">
+          <% if(user.id && user.login) { %>
+          <li><a href="/api/auth/logout">Выход</a></li>
+          <% } %>
         </ul>
       </div>
     </header>
