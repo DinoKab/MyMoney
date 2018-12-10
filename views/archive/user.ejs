@@ -2,19 +2,39 @@
 
 <div class="main">
   <div class="container">
-    <div class="content">
+    <div class="user">
+      <div class="post"><a href="/post/add">Добавить новую запись</a></div>
       <% for (var i = 0; i < posts.length; i++) { %>
       <div class="post">
+        <!--
+          <div class="top">
+            <h2>
+              <a href="/posts/<%=posts[i].url %>"> <%=posts[i].title %> </a>
+            </h2>
+          </div>
+        -->
         <div class="top">
-          <h2>
-            <a href="/posts/<%=posts[i].url %>"> <%=posts[i].title %> </a>
-          </h2>
+          <p>
+            <a href="/posts/<%=posts[i].url %>"> <%=posts[i].title %>р. </a>
+          </p>
+        </div>
+        <div>
+          <p><b> ⚊</b></p>
         </div>
         <div class="body"><%-posts[i].body %></div>
-        <div class="bottom">
-          <div class="author"></div>
-          <a href="/">Комментарии</a>
-        </div>
+        <!--
+          <div class="bottom">
+            <div class="author"></div>
+            <a href="/">Комментарии</a>
+          </div>
+        -->
+        <!--
+          <a
+            style="color:black; text-decoration: none;"
+            href="/post/edit/<%=posts[i].id %>"
+            >✎</a
+          >
+        -->
       </div>
       <% } %>
 
@@ -26,18 +46,18 @@
           >← К новым</a
         >
         <% } %> <% if (current == 2) { %>
-        <a class="new" href="/users/<%= _user.login %>">← На первую</a> <% } %>
+        <a class="new" href="/users/<%= _user.login %>">🠜 На первую</a> <% } %>
         <% if (pages > 0 && current < pages) { %>
         <a
           class="old"
           href="/users/<%= _user.login %>/<%= Number(current) + 1 %>"
-          >К старым →</a
+          >К старым 🠞</a
         >
         <% } %>
       </div>
     </div>
 
-    <% include ../layout/sidebar.ejs %>
+    <!-- <% include ../layout/sidebar.ejs %> -->
   </div>
 </div>
 
